@@ -1,0 +1,20 @@
+body {
+    background-color: antiquewhite;
+}
+.border {
+    border: black solid 8px;
+    margin: 16px;
+    padding: 16px;
+    width: 512px;
+    height: 128px;
+}
+
+div:first-of-type {
+    background-color: aquamarine;
+    box-sizing: content-box;
+}
+div:last-of-type {
+    background-color: azure;
+    box-sizing: border-box;
+}
+

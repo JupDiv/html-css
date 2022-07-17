@@ -1,0 +1,52 @@
+.about {
+  background-color: $light-white;
+  padding: 46px 15px;
+
+  &__content {
+    width: 100%;
+  }
+}
+
+@include for-desktop {
+  .about {
+    padding: 76px 0px 77px 0px;
+    &__content {
+      display: flex;
+      margin: auto;
+      width: 1140px;
+    }
+  }
+}
+
+.article {
+  &:last-child {
+    margin-top: 20px;
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 0;
+  }
+
+  &__text {
+    margin-top: 6px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 0;
+  }
+}
+@include for-desktop {
+  .article {
+    &:last-child {
+      margin-top: 0px;
+      margin-left: 29px;
+    }
+  }
+}
+
+.dipp {
+  display: flex;
+}

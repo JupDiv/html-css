@@ -1,0 +1,30 @@
+a.anchor:link {
+    background-color: black;
+    color: white;
+}
+a.anchor:visited {
+    background-color: orange;
+    color: green;
+}
+a.anchor:hover {
+  font-size: 24px;
+}
+a.anchor:active {
+    border: 3px solid red;
+}
+h2 + button:active {
+    border: 3px solid red;
+}
+button + button {
+   border: 2px dashed grey;
+}
+h2 + button:hover {
+    color: white;
+    background-color: grey;
+}
+input:focus {
+    background-color: orange;
+}
+input[type = "checkbox"] {
+    margin-left: 20px;
+}

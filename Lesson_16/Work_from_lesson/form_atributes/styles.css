@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+.control {
+    margin: 16px;
+}
+.radio {
+    display: inline-block;
+}
+.labels {
+    display: inline-block;
+}
+
+

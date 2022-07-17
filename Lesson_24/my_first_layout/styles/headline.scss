@@ -1,0 +1,106 @@
+.headline {
+  background-color: $light-peach;
+  width: 100%;
+
+  &__content {
+    margin: 0px 15px 0px 15px;
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    margin: 0px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: -0.3125px;
+  }
+  &__description {
+    margin-top: 24px;
+    margin-bottom: 0;
+    font-family: Work Sans;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+  }
+  &__banner {
+    margin-top: 33px;
+    margin-bottom: 36px;
+    width: 320px;
+    height: 180px;
+  }
+  &__actions {
+    margin-top: 30px;
+  }
+}
+
+@include for-desktop {
+  .headline {
+    margin: auto;
+    width: 1140px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &__content {
+      padding: 0;
+      margin: 0;
+      margin-top: 84px;
+    }
+
+    &__title {
+      width: 754px;
+      height: 165px;
+      font-weight: 700;
+      font-size: 80px;
+      line-height: 78px;
+      letter-spacing: -0.5px;
+    }
+    &__description {
+      margin-top: 34px;
+      width: 465px;
+      height: 102px;
+    }
+
+    &__up {
+      position: absolute;
+      left: 0;
+      z-index: 1;
+    }
+    &__banner {
+      position: relative;
+      display: block;
+      left: 105px;
+      margin-top: 0;
+      margin-left: auto;
+      margin-bottom: 77px;
+      width: 796px;
+      height: 448px;
+    }
+    &__button {
+      margin-top: 58px;
+    }
+  }
+}
+
+.headline-actions {
+  margin-top: 30px;
+  width: 100%;
+
+  &__button:last-child {
+    margin-top: 15px;
+  }
+
+  &__button {
+    width: 100%;
+  }
+}
+
+@include for-desktop {
+  .headline-actions {
+    &__button {
+      width: 160px;
+    }
+  }
+}

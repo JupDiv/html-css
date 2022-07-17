@@ -1,0 +1,13 @@
+$sm: 600px;
+$bg: 900px;
+
+@mixin for-small {
+  @media (min-width: $sm) {
+    @content;
+  }
+}
+@mixin for-big {
+  @media (min-width: $bg) {
+    @content;
+  }
+}

@@ -1,0 +1,31 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.box {
+    width: 200px;
+    height: 50px;
+    background-color: coral;
+    color: white;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    line-height: 50px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 64px;
+    
+}
+.icon-bird  {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    fill: white;   
+}
+.icon-bird:hover {
+    fill: green;
+}
+.box:hover {
+    color: darkcyan;
+}

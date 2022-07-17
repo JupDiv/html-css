@@ -1,0 +1,132 @@
+.audience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  background-color: #00a1c612;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__subtitle {
+    margin: 0;
+    padding-top: 50px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    text-align: center;
+  }
+  &__title {
+    margin: 0px;
+    margin-top: 17px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.357143px;
+  }
+
+  &__description {
+    margin: 0px;
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+  }
+
+  &__action {
+    margin-top: 30px;
+  }
+
+  &__button {
+    width: 100%;
+  }
+
+  &__banners {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    margin-top: 15px;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.05) 0%,
+        rgba(255, 255, 255, 1e-5) 100%
+      ),
+      #ffffff;
+    background-blend-mode: overlay, normal;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+      inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+  }
+  &__item:first-child {
+    margin-top: 0;
+  }
+}
+
+@include for-desktop {
+  .audience {
+    display: flex;
+    margin: auto;
+    width: 100%;
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      align-items: center;
+      margin-top: 107px;
+    }
+    &__subtitle {
+      margin: 0;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 34px;
+    }
+    &__title {
+      margin: 0;
+      margin-top: 24px;
+      width: 555px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 56px;
+      letter-spacing: -0.5px;
+    }
+    &__description {
+      margin: 0;
+      margin-top: 30px;
+      font-size: 24px;
+      line-height: 34px;
+      text-align: center;
+      width: 555px;
+    }
+    &__action {
+      margin-top: 34px;
+      display: flex;
+    }
+    &__button {
+      width: 160px;
+    }
+
+    &__button:last-child {
+      margin-left: 10px;
+    }
+
+    &__banners {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 111px;
+      margin-bottom: 110px;
+      width: 1140px;
+    }
+  }
+}
